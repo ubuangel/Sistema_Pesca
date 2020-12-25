@@ -1,0 +1,229 @@
+/* Fuentes locales */
+@font-face {
+  font-family: 'pacificoregular';
+  src: url('fonts/pacifico-webfont.woff2') format('woff2'),
+       url('fonts/pacifico-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoblack';
+  src: url('fonts/roboto-black-webfont.woff2') format('woff2'),
+       url('fonts/roboto-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('opensans-regular-webfont.woff2') format('woff2'),
+       url('opensans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Propiedades de cajas */
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #0000FF;
+}
+
+body {
+  width: 98%;
+  margin: 1% auto;
+  background-color: #000000;
+}
+
+header {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1, header p {
+  margin: 0;
+}
+
+nav {
+  height: 5rem;
+  margin-bottom: 1rem;
+  background-color: #004c4c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav div:nth-of-type(2n+1) {
+  flex: 2;
+}
+
+nav div .seccion {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+.seccion input[type="search"] {
+  flex: 3;
+}
+
+.seccion input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+nav a:link, nav a:visited, nav a:focus {
+  color: white;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a:active {
+  color: #3fbf7f;
+}
+
+.products {
+  width: 96%;
+  margin: 0 auto;
+  background-color: teal;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.product-card {
+  border: 1px dashed brown;
+  padding: 1%;
+  flex-grow: 1;
+  flex-basis: 22%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image {
+  background-color: white;
+  padding: 4%;
+}
+
+.product-image img {
+  max-width: 92%;
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  height: 250px;
+}
+
+.product-info {
+  background-color: #66b2b2;
+}
+
+.product-info h5, .product-info h6 {
+  display: inline-block;
+  margin: 0;
+  padding: 2%;
+}
+
+/* Select the first two */
+.products .product-card:first-child,
+.products .product-card:nth-child(2) {
+  flex: 2 46%;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+footer a {
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+footer a:link, footer a:visited, footer a:focus {
+  color: white;
+}
+
+footer a:hover {
+  color: black;
+}
+
+footer a:active {
+  color: #3fbf7f;
+}
+
+header, footer {
+  background-color: #077;
+}
+
+/* Tipografía */
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+header h1 {
+  font-family: 'robotoblack';
+  font-size: 3rem;
+}
+
+header p {
+  font-family: 'pacificoregular';
+  font-size: 2rem;
+}
+
+footer, footer p {
+  font-size: 1rem;
+}
+
+.product-info h5 {
+  margin-top: 0.25rem;
+  font-size: 2rem;
+}
+
+.product-info h6 {
+  font-size: 2.5rem;
+  float: right;
+}
+
+.product-info p {
+  font-family: 'pacificoregular';
+  text-align: justify;
+  padding: 1%;
+  clear: both;
+}
