@@ -46,8 +46,8 @@ $tuplas=$crud->mostra();
 				<td><font color="white"><?php echo $li->getdirec() ?></td>
 				<td><font color="white"><?php echo $li->getpri()?></td>
 				
-				<td><a href="actualisa.php?id =<?php echo $li->getnombre()?>&accion=act">Actualizar</a></td>
-				<td> <a href="../controladores/administrar_libro.php?id=<?php echo $li->getnombre()?>&accion=eli" > Eliminar</a></td>
+				<td><a href="actualisa.php?nombre =<?php echo $li->getnombre()?>&accion=act">Actualizar</a></td>
+				<td> <a href="../controladores/administrar_libro.php?nombre=<?php echo $li->getnombre()?>&accion=eli" > Eliminar</a></td>
 			</tr>
 			
 			<?php }?>

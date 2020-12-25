@@ -102,7 +102,7 @@ require_once('conexion.php');
 		
 			public function actualisa($autor){
 		    $db=Db::conectar();
-		    $actualisa=$db->prepare('UPDATE Usuario SET  nombre=:nombre,clave=:clave,direccion=:direccion ,privilegio=:privilegio WHERE ID=:id');
+		    $actualisa=$db->prepare('UPDATE Usuario SET  nombre=:nombre,clave=:clave,direccion=:direccion ,privilegio=:privilegio WHERE nombre=:nombre');
 		    $actualisa->bindValue('nombre',$autor->getnombre());
 		    $actualisa->bindValue('clave',$autor->getclave());
 		    $actualisa->bindValue('direccion',$autor->getdirec());
