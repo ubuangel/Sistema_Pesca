@@ -9,7 +9,7 @@
 ?>
 <html>
 <head>
-	<title>Actualizar Libro</title>
+	<title>Actualizar Articulos</title>
 </head>
 <body>
 	<form action='controladores/administrar_libro.php' method='post'>
@@ -25,7 +25,7 @@
 		</tr>
 		<tr>
 			<td>precio:</td>
-			td><input type='text' name='precioVenta' value='<?php echo $libro->getprecioVenta()?>' ></td>
+			<td><input type='text' name='precioVenta' value='<?php echo $libro->getprecioVenta()?>' ></td>
 			
 		</tr>
 		<input type='hidden' name='actualizar' value'actualizar'>

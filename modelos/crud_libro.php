@@ -100,13 +100,13 @@ require_once('conexion.php');
 			$actualizar->execute();
 		}
 		
-			public function actualisa($autor){
+			public function actualisa($libro){
 		    $db=Db::conectar();
-		    $actualisa=$db->prepare('UPDATE Usuario SET  nombre=:nombre,clave=:clave,direccion=:direccion ,privilegio=:privilegio WHERE nombre=:nombre');
-		    $actualisa->bindValue('nombre',$autor->getnombre());
-		    $actualisa->bindValue('clave',$autor->getclave());
-		    $actualisa->bindValue('direccion',$autor->getdirec());
-		    $actualisa->bindValue('privilegio',$autor->getpri());
+		    $actualisa=$db->prepare('UPDATE Usuario SET  clave=:clave,direccion=:direccion ,privilegio=:privilegio WHERE nombre=:nombre');
+		    $actualisa->bindValue('nombre',$libro->getnombre());
+		    $actualisa->bindValue('clave',$libro->getclave());
+		    $actualisa->bindValue('direccion',$libro->getdirec());
+		    $actualisa->bindValue('privilegio',$libro->getpri());
 		    $actualisa->execute();
 		}
 	}

@@ -5,18 +5,18 @@
 	$crud= new CrudLibro();
 	$libro=new Libro();
 	//busca el libro utilizando el id, que es enviado por GET desde la vista mostrar.php
-	$libro=$crud->obtenerA($_GET['nombre']);
+	$libro=$crud->obtenerA($_GET["nombre"]);//aqui problema -undefinined index nombre
 ?>
 <html>
 <head>
-	<title>Actualizar Autor</title>
+	<title>Actualizar Usuario</title>
 </head>
 <body>
 	<form action='../controladores/administrar_libro.php' method='post'>
 	<table>
 		<tr>
-		<td>nombre:</td>
-			<td><input type='text' name='nombre' value='<?php echo $libro->getnombre()?>'></td>
+		
+			<input type='hidden' name='nombre' value='<?php echo $libro->getnombre()?>'>
 			<td>clave:</td>
 			<td> <input type='text' name='clave' value='<?php echo $libro->getclave()?>'></td>
 		</tr>

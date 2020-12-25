@@ -5,6 +5,7 @@
 		private $modelo;
 		private $marca;
 		
+		
 		private $nombre;
 		private $clave;
 		private $direccion;
@@ -50,6 +51,9 @@
 		
 		
 		
+		
+		
+
 		
 		public function getnombre() {
 		    return $this->nombre;
