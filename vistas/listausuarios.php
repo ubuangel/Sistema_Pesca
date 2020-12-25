@@ -6,9 +6,9 @@
 //obtiene todos los libros con el método mostrar de la clase crud
 
 //incluye la clase Libro y CrudLibro
-require_once('../modelos/crud_libro.php');
-require_once('../libro.php');
-$crud=new CrudLibro();
+require_once('../modelos/crud_autor.php');
+require_once('../autor.php');
+$crud=new CrudAutor();
 $li= new Autor();
 //obtiene todos los libros con el método mostrar de la clase crud
 $tuplas=$crud->mostra();
@@ -46,8 +46,8 @@ $tuplas=$crud->mostra();
 				<td><font color="white"><?php echo $li->getdirec() ?></td>
 				<td><font color="white"><?php echo $li->getpri()?></td>
 				
-				<td><a href="actualisa.php?id =<?php echo $li->getnombre()?>&accion=act">Actualizar</a></td>
-				<td> <a href="../controladores/administrar_libro.php?id=<?php echo $li->getnombre()?>&accion=eli" > Eliminar</a></td>
+				<td><a href="actualisa.php?nombre =<?php echo $li->getnombre()?>&accion=act">Actualizar</a></td>
+				<td> <a href="../controladores/administrar_autor.php?nombre=<?php echo $li->getnombre()?>&accion=eli" > Eliminar</a></td>
 			</tr>
 			
 			<?php }?>
