@@ -33,7 +33,7 @@ require_once('conexion.php');
 		    $select=$db->query('SELECT * FROM Usuario');
 		    
 		    foreach($select->fetchAll() as $autor){
-		        $myLibro= new Autor();
+		        $myLibro= new Libro();
 		        $myLibro->setnombre($autor['nombre']);
 		        $myLibro->setclave($autor['clave']);
 		        $myLibro->setdirec($autor['direccion']);
@@ -79,8 +79,8 @@ require_once('conexion.php');
 		    $select->bindValue('nombre',$nombre);
 		    $select->execute();
 		    $autor=$select->fetch();
-		    $myautor= new Autor();
-		    $myautor->setnombre($autor['nombre']);
+		    $myautor= new Libro();
+		    $myautor->setnombre($autor['nombre']);//error  trying to access array offset on value of type bool in /home/angel/Git_Sistema_Web/eqson/modelos/crud_libro.php on line 83
 		    $myautor->setclave($autor['clave']);
 		    $myautor->setdirec($autor['direccion']);
 		    $myautor->setpri($autor['privilegio']);

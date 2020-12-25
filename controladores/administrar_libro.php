@@ -6,7 +6,7 @@ require_once('../libro.php');
  
 $crud= new CrudLibro();//crear un  objeto de de tipo crud    para usar las funciones edfinidas en crud_libro 
 $libro= new Libro();
-$autor=new Autor();
+
  
 
 	if(isset($_POST['actualizar'])){
@@ -24,11 +24,11 @@ $autor=new Autor();
 	}
 	
 	elseif (isset($_POST['actualisa'])){
-	    $autor->setnombre($_POST['nombre']);
-	    $autor->setclave($_POST['clave']);
-	    $autor->setdirec($_POST['direccion']);
-	    $autor->setpri($_POST['privilegio']);
-	    $crud->actualisa($autor);
+	    $libro->setnombre($_POST['nombre']);
+	    $libro->setclave($_POST['clave']);
+	    $libro->setdirec($_POST['direccion']);
+	    $libro->setpri($_POST['privilegio']);
+	    $libro->actualisa($libro);
 	    header('Location: ../index.php');
 	    // si la variable accion enviada por GET es == 'e' llama al crud y elimina un libro
 	}elseif($_GET['accion']=='act'){

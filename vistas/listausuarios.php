@@ -9,7 +9,7 @@
 require_once('../modelos/crud_libro.php');
 require_once('../libro.php');
 $crud=new CrudLibro();
-$li= new Autor();
+$li= new Libro();
 //obtiene todos los libros con el método mostrar de la clase crud
 $tuplas=$crud->mostra();
 
