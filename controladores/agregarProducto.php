@@ -17,9 +17,9 @@ $stock =  $_POST['cantidad'];
 // Límite de tamaño es 300 kilobytes
 $maxsize = 300000;
 if ($imagen && $_FILES['imagen_producto']['size'] <= $maxsize) {
-    $uploaddir = $_SERVER['DOCUMENT_ROOT'] . '/crud_biblio/app/src/images/productos/';
+    $uploaddir = $_SERVER['DOCUMENT_ROOT'] . '/eqson/app/src/images/productos/';
     $uploadfile = $uploaddir . basename($imagen);
-    $filepath = 'http://localhost/crud_biblio/app/src/images/productos/' . basename($imagen);
+    $filepath = 'http://localhost/eqson/app/src/images/productos/' . basename($imagen);
     $mimetype = mime_content_type($_FILES['imagen_producto']['tmp_name']);
     // Extensiones de imágenes aceptadas
     $imagenExtsAceptadas = array(
