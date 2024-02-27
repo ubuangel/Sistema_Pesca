@@ -195,7 +195,7 @@ Link del Proyecto: [https://github.com/ubuangel/Sistema_Pesca](https://github.co
 
 Credito a
 
-* [Youtube](https://www.youtube.com/watch?v=KTPh5Cryl24)
+* [Jersson]
 
 
 <p align="right">(<a href="#readme-top">Volver arriba</a>)</p>
