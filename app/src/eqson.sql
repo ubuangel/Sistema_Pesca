@@ -1,7 +1,14 @@
-USE `eqson` ;
+--USE `eqson` ;
 
 -- -----------------------------------------------------
 -- Table `eqson`.`Usuario`
+
+
+/* Create the database */
+CREATE DATABASE  IF NOT EXISTS eqson;
+
+/* Switch to the classicmodels database */
+USE eqson;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `eqson`.`Usuario` (
   `nombre` VARCHAR(10) NOT NULL,
